@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+    max-width: 230px;
+    width: 100%;
+}
+.desconto {
+    display: flex;
+    align-items: center;
+}
+.desconto *,
+.comprar strong {
+    font-family: 'Chivo Mono', monospace;
+}
+.desconto span {
+    font-size: 1.3em;
+    padding-left: 13px;
+}
+.desconto strong {
+    color: gray;
+}
+.catalogo li {
+    padding: 3px;
+    max-width: 1000px;
+    width: 100%;
+    border: 1px rgba(0, 0, 0, 0.555) solid;
+    border-radius: 5px;
+}
+.descrição p {
+    position: absolute;
+    max-width: 520px;
+    border: 1px black solid;
+    border-radius: 3px;
+    background-color: white;
+    overflow: hidden;
+}
+.catalogo li p {
+    font-size: 1.25em;
+}
+.catalogo li h4 {
+    width: 220px;
+}
+.catalogo li * {
+    padding-bottom: 5px;
+}
+nav h3 {
+    padding-left: 55px;
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.catalogo {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(4,22.2%);
+}
+nav > ul {
+    display: flex;
+    justify-content: center;
+}
+button {
+    font-weight: 800;
+    padding: 2px;
+}
+nav {
+    padding-top: 10px;
+}
+h2 {
+    font-size: 2.4em;
+}
+.descrição p {
+    display: none;
+}
+.descrição:hover p {
+    display: block;
+}
+.comprar button {
+    font-size: 1.1em;
+}
+.descrição .ver {
+    font-size: 78.9%;
+}
+* > .container {
+    padding-top: 10px;
+    display: flex;
+}
+.container > * {
+    padding: 3px;
+}
+.dividido {
+    padding-top: 15px;
+}
+@media screen and (min-width: 320px) {
+    header h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 90px;
+    }
+    .catalogo li {
+        padding: 3px;
+        max-width: 230px;
+        width: 100%;
+        border: 1px rgba(0, 0, 0, 0.555) solid;
+        border-radius: 5px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    header h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 5.3em;
+    }
+    .catalogo li {
+        padding: 3px;
+        max-width: 300px;
+        width: 100%;
+        border: 1px rgba(0, 0, 0, 0.555) solid;
+        border-radius: 5px;
+    }
+    .catalogo {
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(4,22.2%);
+        width: 1000px;
+    }
+    header {
+        display: block;
+        padding-left: 320px;
+    }
+    body {
+        padding-left: 25%;
+    }
+}
